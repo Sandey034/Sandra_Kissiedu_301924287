@@ -1,6 +1,8 @@
+# Portfolio 1 Database Design and Modelling
+
 **Case study**
 
-A real-time game leaderboard system stores players, game sessions, scores, rankings and achievements. Players play sessions that produce scores, which the system ranks on a leaderboard. Administrators manage leaderboards and award achievements.
+A real-time game leaderboard system stores players, game sessions, scores, rankings, and achievements. Players play sessions that produce scores, which the system ranks on a leaderboard. Administrators manage leaderboards and award achievements.
 
 **Users**
 
@@ -15,19 +17,19 @@ Register a player; start a session; update a score; retrieve a ranking; manage a
 1. Each player has a unique player ID and a unique username.
 
 2. Each leaderboard has a unique ID and a status of open or closed.
-   
+
 3. Each session refers to one existing player and one existing leaderboard. The end time, once set, must be later than the start time.
-   
+
 4. A player can have only one active session per leaderboard at a time.
-   
+
 5. Each session has one current score, which is a non-negative whole number. The score can be updated only while the session is active.
-   
+
 6. A closed leaderboard accepts no new sessions or score updates.
-   
+
 7. A player has at most one ranking entry per leaderboard, based on their highest session score. Tied scores rank the earlier achieved score first.
-   
+
 8. Each achievement has a unique code, and a player can earn it only once. The award date cannot be earlier than the player’s registration date.
 
 **Scope**
 
-The system covers one fictional game service with fictional players, sessions, scores and achievements. Rankings are derived from stored scores. Live network streaming, anti-cheat detection, authentication, payments, rewards, teams and friend lists are excluded.
+The system covers one fictional game service with fictional players, sessions, scores, and achievements. Rankings are derived from stored scores. Live network streaming, anti-cheat detection, authentication, payments, rewards, teams and friend lists are excluded.
