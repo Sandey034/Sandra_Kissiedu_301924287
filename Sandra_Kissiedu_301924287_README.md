@@ -6,7 +6,7 @@ Student ID: 301924287
 
 ## Case study
 
-
+A real-time game leaderboard system stores players, game sessions, scores, rankings and achievements. Players play sessions that produce scores, which the system ranks on a leaderboard. Administrators manage leaderboards and award achievements.
 
 ## Portfolio folders
 
